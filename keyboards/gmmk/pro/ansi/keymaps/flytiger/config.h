@@ -12,9 +12,14 @@
     // #define RGB_MATRIX_STARTUP_VAL 192
     // #define RGB_MATRIX_STARTUP_SPD 30
 
-    #define RGB_DISABLE_WHEN_USB_SUSPENDED true
+    // #define RGB_DISABLE_WHEN_USB_SUSPENDED true
     // #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 225
-    #define RGB_DISABLE_TIMEOUT 0
+    // #define RGB_DISABLE_TIMEOUT 0
+
+    // Timeout lights after 5m or sleep/usb suspended
+    #define RGBLIGHT_SLEEP
+    #define RGB_DISABLE_TIMEOUT 300000
+    #define RGB_DISABLE_WHEN_USB_SUSPENDED true
 #endif //RGB_MATRIX_ENABLE
 
 #define VIA_CUSTOM_LIGHTING_ENABLE
